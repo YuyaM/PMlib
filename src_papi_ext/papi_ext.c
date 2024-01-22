@@ -25,7 +25,9 @@
 #define HL_STOP		0
 #define HL_START	1
 
+#ifndef PAPI_HIGH_LEVEL_TLS
 #define PAPI_HIGH_LEVEL_TLS PAPI_TLS_HIGH_LEVEL
+#endif
 
 typedef struct _HighLevelInfo
 {
