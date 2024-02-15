@@ -1564,7 +1564,9 @@ void PerfWatch::outputPapiCounterLegend (FILE* fp)
 
 // TODO: We should simplify these too many fprintf() calls into one fprintf() call. sometime...
 
+#ifdef USE_PAPI
 	const PAPI_hw_info_t *hwinfo = NULL;
+#endif // USE_PAPI
 	std::string s_model_string;
 	std::string s_vendor_string;
 	using namespace std;
